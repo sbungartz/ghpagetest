@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="lib/css/bootstrap.css" />
   <link rel="stylesheet" href="style.css">
 
-  <base href="ghpagetest">
+  <base href="/ghpagetest">
   
   <title>GitHub Page test</title>
 </head>
@@ -21,15 +21,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">GitHub Page test</a>
+        <a class="navbar-brand" href="">GitHub Page test</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li ng-class="{'active': isRoute('/')}"><a href="#">Home</a></li>
-          <li ng-class="{'active': isRoute('/sub1')}"><a href="#sub1">Sub1</a></li>
+          <li ng-class="{'active': isRoute('/')}"><a href="/">Home</a></li>
+          <li ng-class="{'active': isRoute('/sub1')}"><a href="/sub1">Sub1</a></li>
         </ul>
 	<ul class="nav navbar-nav pull-right">
-          <li ng-show="isRouteOrBelow('/sub1')" ng-class="{'active': isRoute('/sub1/subsub')}"><a href="#sub1/subsub">SubSub</a></li>
+          <li ng-show="isRouteOrBelow('/sub1')" ng-class="{'active': isRoute('/sub1/subsub')}"><a href="/sub1/subsub">SubSub</a></li>
 	</ul>
       </div>
     </div>
