@@ -25,11 +25,11 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li ng-class="{'active': isRoute('/')}"><a href="./">Home</a></li>
-          <li ng-class="{'active': isRoute('/sub1')}"><a href="./sub1">Sub1</a></li>
+          <li ng-class="{'active': isRoute('/')}"><a href="#">Home</a></li>
+          <li ng-class="{'active': isRoute('/sub1')}"><a href="sub1">Sub1</a></li>
         </ul>
 	<ul class="nav navbar-nav pull-right">
-          <li ng-show="isRouteOrBelow('/sub1')" ng-class="{'active': isRoute('/sub1/subsub')}"><a href="./sub1/subsub">SubSub</a></li>
+          <li ng-show="isRouteOrBelow('/sub1')" ng-class="{'active': isRoute('/sub1/subsub')}"><a href="sub1/subsub">SubSub</a></li>
 	</ul>
       </div>
     </div>
