@@ -1,7 +1,7 @@
 var module = angular.module('ghpagetest', ['ui.bootstrap', 'ngRoute', 'ngStorage']);
 
 module.config(['$routeProvider', '$locationProvider', '$compileProvider', function($routeProvider, $locationProvider, $compileProvider) {
-//  $locationProvider.html5Mode(true); // Remove the '#' from URL.
+  $locationProvider.html5Mode(true); // Remove the '#' from URL.
   $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|blob):/);
   $routeProvider.when('/', {
     templateUrl: 'res/home.html'
